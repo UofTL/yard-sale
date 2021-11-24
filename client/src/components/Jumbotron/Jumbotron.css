@@ -1,0 +1,36 @@
+.jumbotron{
+    width:100%;
+    clear: "both";
+    text-align: "center";
+    font-family: "Palatino Linotype", "Book Antiqua", serif;
+    border: groove 2px rgb(22, 72, 27);
+    color: rgb(22, 72, 27);
+    border-radius: 0 important!;
+    background-color: rgb(242, 240, 240)
+}
+
+.jumbotronBorder{
+    width:100%;
+    clear: "both";
+    text-align: "center";
+    font-family: "Palatino Linotype", "Book Antiqua", serif;
+    border: groove 2px rgb(22, 72, 27);
+    color: rgb(22, 72, 27);
+    border-radius: 0;
+    background-color: rgb(242, 240, 240);
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:70px;
+    padding-bottom: 90px
+}
+
+.h2, h2 {
+    color: rgb(22, 72, 27);
+    text-align: center;
+    font-size: 2.6rem;
+    border-bottom:dotted 2px grey; 
+    padding-left:50px;
+    padding-right:50px;
+    padding-top:10px;
+    padding-bottom: 20px
+}

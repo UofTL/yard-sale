@@ -1,0 +1,42 @@
+{
+    "name": "yard-sale",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+        "start:prod": "node server.js",
+        "start:dev": "concurrently \"node server.js --ignore 'client/*'\" \"npm run client\"",
+        "client": "cd client && npm run start",
+        "install": "cd client && yarn install",
+        "build": "cd client && npm run build",
+        "heroku-postbuild": "npm run build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/UofTL/yard-sale.git"
+    },
+    "author": "Eleonore",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/UofTL/yard-sale/issues"
+    },
+    "homepage": "https://github.com/UofTL/yard-sale#readme",
+    "devDependencies": {
+        "concurrently": "^3.5.0"
+    },
+    "dependencies": {
+        "axios": "^0.18.0",
+        "body-parser": "^1.18.3",
+        "client": "file:client",
+        "cors": "^2.8.4",
+        "dotenv": "^6.0.0",
+        "express": "^4.16.3",
+        "if-env": "^1.0.4",
+        "mongoose": "^5.1.6",
+        "twilio": "^3.18.0",
+        "whatwg-fetch": "^2.0.4",
+        "yarn": "^1.22.17"
+    }
+}
